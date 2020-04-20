@@ -33,13 +33,13 @@
 
 公钥 openssl rsa -inform DER -in publickey.key  -pubin -outform PEM -out publickey.pem
 
-xml目录下的privatekey.key、publickey.key 是海关提供的猜测环境的pkcs8格式的私钥公钥，privatekey.pem、publickey.pem是我转化后的pkcs1格式私钥公钥。
+key目录下的privatekey.key、publickey.key 是海关提供的测试环境的pkcs8格式的私钥公钥，privatekey.pem、publickey.pem是我转换后的pkcs1格式私钥公钥。
 
 xml加签用的是这个包：https://github.com/robrichards/xmlseclibs
 
-加签示例运行index.php 文件即可，配置的是测试环境的参数；正式环境只需要更改参数，开启客户端就行。
+加签示例运行index.php 文件即可，配置的是测试环境的参数。
 
-测试环境不能加海关签，到http程序申报成功就可以了。
+测试环境不能加海关签，到http程序申报成功就可以了。正式环境只需要更改参数，开启客户端就行。
 
 ## 注意问题
 
