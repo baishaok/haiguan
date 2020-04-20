@@ -26,7 +26,7 @@
 4. 采用post 方式提交到公共平台。返回的结果只是提交的情况，申报成功与否还要看公共平台的回执信息。
 
 ## 加签说明
-海关提供的是java用的pkcs8格式的公钥私钥，要转换成php用的pkcs1格式的公用私钥。
+海关提供的是java用的pkcs8格式的公钥私钥，要转换成php用的pkcs1格式的公钥私钥。
 
 转换命令：
 私钥 openssl rsa -inform DER -in privatekey.key  -outform PEM -out privatekey.pem
